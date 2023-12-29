@@ -61,6 +61,10 @@ h1{
     font-weight: 800;
 }
 
+h1:active{
+    color: hsl(47, 88%, 63%);
+}
+
 #card-fotter{
     display: flex;
     justify-content: flex-start;
@@ -78,4 +82,34 @@ h1{
 
 #card-fotter > p{
     font-weight: 800;
+}
+
+/* Tablet responsiveness */
+@media (min-width: 426px) and (max-width: 1023px){
+    #card{
+        width: 50%;
+    }
+
+    #learning{
+        width: 73px
+    }
+}
+
+/* Phone responsiveness */
+@media (max-width: 425px) and (max-width: 1023px){
+    #card{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    #learning{
+        width: 65px;
+    }
 }
